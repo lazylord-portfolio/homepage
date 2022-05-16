@@ -5,6 +5,9 @@
     --text-active-color: var(--main-color);
     --element-standard-bcolor: #588157;
     --element-active-bcolor: #3a5a40;
+
+
+    --standard-image: url("https://images.unsplash.com/photo-1588204784390-d3b85c298e29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
 }
 
 body {
@@ -33,6 +36,7 @@ body {
 
 header {
     position: sticky;
+    z-index: 2;
     top: 0px;
     justify-content: space-between;
 }
@@ -51,8 +55,7 @@ button {
 
 a:hover,
 a:focus,
-button:hover,
-button:focus {
+button:hover {
     cursor: pointer;
     color: var(--main-color);
     text-decoration: underline solid 2px;
@@ -60,6 +63,18 @@ button:focus {
 
 .nav-bar a {
     padding: 0.5em;
+}
+
+main {
+    text-align: justify;
+}
+
+.initial-view {
+    width: 100%;
+    background: linear-gradient(to right,
+            var(--secondary-background-color) 0%,
+            var(--secondary-background-color) 45%,
+            var(--main-color) 45%, var(--main-color) 100%);
 }
 
 .view-block {
@@ -73,7 +88,8 @@ button:focus {
 }
 
 h1 {
-    width: 50%;
+    width: 35%;
+    padding-right: 3em;
 }
 
 .lrg-txt {
@@ -90,7 +106,7 @@ h1 {
 .section-intro {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     border-bottom: 1px solid var(--secondary-background-color);
 }
@@ -100,12 +116,14 @@ p.desc {
     border-right: 3px var(--element-standard-bcolor) solid;
     height: 15vh;
     margin-bottom: 2em;
+    margin-block-start: 0em;
     font-size: 1.3em;
+    width: 50%;
 }
 
 .separator-parallax-img {
     /* image by Ali Kazal on unsplash*/
-    background-image: url("https://images.unsplash.com/photo-1588204784390-d3b85c298e29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
+    background-image: var(--standard-image);
 
     min-height: 40vh;
     background-attachment: fixed;
@@ -114,9 +132,44 @@ p.desc {
     background-size: cover;
 }
 
+
+/* Setting the middle p:s border to left side*/
+.section-intro:nth-child(2) p {
+    border-right: none;
+    border-left: 3px var(--element-standard-bcolor) solid;
+}
+
 .section-intro:last-child {
     border-bottom: none;
 }
+
+.content-link-image {
+    background-image: var(--standard-image);
+    height: 20vh;
+    width: 20vh;
+    text-align: center;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    color: var(--main-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+
+
 
 footer {
     justify-content: space-evenly;
