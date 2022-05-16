@@ -19,19 +19,58 @@ body {
     /*setting text values such as font
      */
     font-family: monospace;
+    color: var(--text-color);
 }
 
-header {
+.outline {
     background-color: var(--secondary-background-color);
     display: flex;
     width: 100%;
-    justify-content: space-between;
     padding: 1em;
+    align-items: center;
+}
+
+header {
     position: sticky;
+    top: 0px;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .nav-bar a {
-    text-decoration: none;
-    color: inherit;
     padding: 0.5em;
+}
+
+.view-block {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+h1 {
+    width: 50%;
+}
+
+.view-block p {
+    border-top: 3px var(--element-standard-bcolor) solid;
+    border-left: 3px var(--element-standard-bcolor) solid;
+    width: 40%;
+    padding: 1em;
+}
+
+p.desc {
+    border-left-width: 0px;
+    border-right: 3px var(--element-standard-bcolor) solid;
+}
+
+footer {
+    justify-content: space-evenly;
 }
