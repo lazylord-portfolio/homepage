@@ -40,8 +40,7 @@ let prevRatio = 0.0;
 let opacity = 0;
 
 window.addEventListener("load", (event) => {
-    header = document.querySelector("#fader");
-
+    header = document.querySelector(".fader");
     create_observer();
 }, false)
 
@@ -52,7 +51,6 @@ function create_observer() {
         rootMargin: "0px",
         threshold: build_thresholds()
     }
-
     const obs = new IntersectionObserver(fadeout, options);
     obs.observe(header);
 }
@@ -60,9 +58,9 @@ function create_observer() {
 
 function build_thresholds() {
     let thresholds = [];
-    let steps = 20;
+    let steps = 30;
 
-    for (let i = 1.0; i <= steps; i++)
+    for (let i = 8.0; i <= steps; i++)
         thresholds.push(i / steps);
 
     thresholds.push(0);
