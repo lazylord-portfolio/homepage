@@ -28,10 +28,10 @@ header {
     justify-content: space-between;
     padding: 1em;
     position: sticky;
-
 }
 
-header a {
+.nav-bar a {
     text-decoration: none;
     color: inherit;
+    padding: 0.5em;
 }
