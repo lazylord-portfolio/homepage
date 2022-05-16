@@ -1,19 +1,21 @@
-.fadein-left {
+:root {
+    --trans-time: 2s;
+}
 
+.fadein-left {
     --trans-distance: -50vw;
-    -webkit-animation: fadeIn 1s both;
-    -moz-animation: fadeIn 1s both;
-    -o-animation: fadeIn 1s both;
-    animation: fadeIn 1s both;
+    -webkit-animation: fadeIn var(--trans-time) both;
+    -moz-animation: fadeIn var(--trans-time) both;
+    -o-animation: fadeIn var(--trans-time) both;
+    animation: fadeIn var(--trans-time) both;
 }
 
 .fadein-right {
-
     --trans-distance: 50vw;
-    -webkit-animation: fadeIn 1s both;
-    -moz-animation: fadeIn 1s both;
-    -o-animation: fadeIn 1s both;
-    animation: fadeIn 1s both;
+    -webkit-animation: fadeIn var(--trans-time) both;
+    -moz-animation: fadeIn var(--trans-time) both;
+    -o-animation: fadeIn var(--trans-time) both;
+    animation: fadeIn var(--trans-time) both;
 }
 
 @-webkit-keyframes fadeIn {
