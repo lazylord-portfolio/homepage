@@ -6,3 +6,10 @@
     --element-standard-bcolor: #588157;
     --element-active-bcolor: #3a5a40;
 }
+
+body {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
