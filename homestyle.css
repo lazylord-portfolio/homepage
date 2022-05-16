@@ -71,6 +71,17 @@ p.desc {
     border-right: 3px var(--element-standard-bcolor) solid;
 }
 
+.separator-parallax-img {
+    /* image by Ali Kazal on unsplash*/
+    background-image: url("https://images.unsplash.com/photo-1588204784390-d3b85c298e29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
+
+    min-height: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 footer {
     justify-content: space-evenly;
 }
