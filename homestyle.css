@@ -25,6 +25,18 @@ body {
     color: var(--text-color);
 }
 
+.bulker {
+    /*Just a block to bulk up inital view top(and to demonstrate cool sticky)*/
+    background-color: var(--secondary-background-color);
+    height: 5vh;
+    width: 100%;
+}
+
+.bulker::after {
+    content: '0';
+    visibility: hidden;
+}
+
 .outline {
     background-color: var(--secondary-background-color);
     display: flex;
@@ -167,9 +179,6 @@ p.desc {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.60);
 }
-
-
-
 
 
 footer {
