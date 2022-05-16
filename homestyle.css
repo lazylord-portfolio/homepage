@@ -8,8 +8,30 @@
 }
 
 body {
+    /*setting display values such as type and color
+     */
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px;
+
+    /*setting text values such as font
+     */
+    font-family: monospace;
+}
+
+header {
+    background-color: var(--secondary-background-color);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1em;
+    position: sticky;
+
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
 }
