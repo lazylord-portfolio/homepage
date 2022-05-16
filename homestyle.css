@@ -1,0 +1,8 @@
+:root {
+    --main-color: #dad7cd;
+    --secondary-background-color: #a3b18a;
+    --text-color: #344e41;
+    --text-active-color: var(--main-color);
+    --element-standard-bcolor: #588157;
+    --element-active-bcolor: #3a5a40;
+}
