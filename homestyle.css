@@ -53,6 +53,10 @@ header {
     justify-content: space-between;
 }
 
+a.homepage-icon {
+    background-image: url("homepage/images/logo.png");
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -66,7 +70,6 @@ button {
 }
 
 a:hover,
-a:focus,
 button:hover {
     cursor: pointer;
     color: var(--main-color);
